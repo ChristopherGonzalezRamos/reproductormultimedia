@@ -1,0 +1,54 @@
+/* Estilo retro de los 80s*/
+.neon-border {
+    position: relative; /* Cambiado a absolute para no afectar el flujo del documento */
+    overflow: visible; /* Permite que el borde se muestre fuera del contenedor */
+    border: 4px solid transparent; /* Borde transparente inicialmente */
+    animation: neon-border 1.5s infinite alternate; /* Llama a la animación */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+}
+
+
+@keyframes neon-border {
+    0% {
+        border-color: rgba(255, 0, 191, 0.6); /* Color azul fuerte */
+    }
+    100% {
+        border-color: transparent; /* Se desvanece a transparente */
+    }
+}
+
+.neon-text {
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), 
+        0 0 10px rgba(255, 0, 255, 0.8), 
+        0 0 20px rgba(255, 0, 255, 0.8), 
+        0 0 30px rgba(255, 0, 255, 0.8), 
+        0 0 40px rgba(255, 0, 255, 0.8);
+}
+
+.neon-title {
+    color: white;
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), 
+        0 0 10px rgba(255, 255, 255, 0.8), 
+        0 0 20px rgba(255, 255, 255, 0.8), 
+        0 0 30px rgba(255, 255, 255, 0.8), 
+        0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+.neon-time {
+    color: white; /* Color del texto cuando está en efecto neón */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), 
+        0 0 10px rgba(255, 255, 255, 0.8), 
+        0 0 20px rgba(255, 255, 255, 0.8), 
+        0 0 30px rgba(255, 255, 255, 0.8), 
+        0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+/* Clase para el texto por defecto en negro */
+.default-time {
+    color: black;
+}
+
+/* Estilo Walkman */

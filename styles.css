@@ -1,0 +1,32 @@
+/* Estilo para los botones */
+.menu-button {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, background-image 3s ease; /* Animación para escalar y cambiar fondo */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto de hover: escalar el botón */
+.menu-button:hover {
+    transform: scale(1.1); /* Agranda el botón */
+    animation: changeBackground 3s infinite; /* Animación de fondo */
+}
+
+/* Animación de cambio de fondo */
+@keyframes changeBackground {
+    0% {
+        background-image: url('/assets/image1.png');
+    }
+    33% {
+        background-image: url('/assets/image2.png');
+    }
+    66% {
+        background-image: url('/assets/image3.png');
+    }
+    100% {
+        background-image: url('/assets/image1.png');
+    }
+}
